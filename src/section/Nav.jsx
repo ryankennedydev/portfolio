@@ -29,7 +29,7 @@ const Nav = () => {
   return (
     <div className='flex p-7 gap-5  bg-stone-950 border-1 border-stone-500/10 w-full'>
       <div className='flex items-center'>
-        <img src={avatar} alt="1313" className='w-25 '/>
+        <img src={avatar} alt="1313" className='w-25 hover:rounded-2xl transition-all duration-300 ease-in '/>
       </div>
       <main className='flex justify-between items-center w-full'>
         <div className='flex flex-col gap-1  '>
