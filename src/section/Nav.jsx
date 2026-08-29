@@ -27,9 +27,9 @@ const Nav = () => {
     ]
 
   return (
-    <div className='flex p-7 gap-5  bg-stone-950 border-1 border-stone-500/10 w-full'>
+    <div className='flex p-7 gap-5 group hover:rounded-lg transition-all duration-300 ease-in hover:border-[#86efac]/50 bg-stone-950 border-1 border-stone-500/10 w-full'>
       <div className='flex items-center'>
-        <img src={avatar} alt="1313" className='w-25 hover:rounded-2xl transition-all duration-300 ease-in '/>
+        <img src={avatar} alt="1313" className='w-25 group-hover:rounded-lg  sm:border-1 sm:group-hover:border-[#86efac]/50 transition-all duration-300 ease-in '/>
       </div>
       <main className='flex justify-between items-center w-full'>
         <div className='flex flex-col gap-1  '>
@@ -59,15 +59,15 @@ const Nav = () => {
       <div className='flex flex-col w-fit  gap-3  items-center hidden sm:flex sm:block'>
         <div className='flex gap-3 w-full'>
             {Icons.map((Icon) => (
-            <div  className='flex text-stone-100 text-[20px]  hover:text-[#86efac]'>
+            <div  className='flex text-stone-100 text-[20px]  hover:text-[#86efac] hover:-translate-y-1 transition-all duration-100 ease-in'>
                 <a href={Icon.link}>{Icon.icone}</a>
             </div>
         ))}
         </div>
         <div className='w-full flex group'>
-          <button className='w-full justify-center cursor-pointer flex border-1 group group-hover:border-[#86efac]/40 pl-7 pr-7  items-center gap-1 border-stone-500 p-2 '>
-            <h1 className='text-stone-100  group-hover:text-[#86efac] '>resume</h1>
-            <ArrowRight size={15} className='text-stone-100 group-hover:text-[#86efac]    '/>
+          <button className='w-full justify-center text-stone-100 cursor-pointer flex border-1 hover:text-[#86efac]  hover:border-[#86efac]/40 pl-7 pr-7  items-center gap-1 border-stone-500 p-2 '>
+            <h1 className=''>resume</h1>
+            <ArrowRight size={15} className='   '/>
           </button>
         </div>
 

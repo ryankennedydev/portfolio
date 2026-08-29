@@ -25,7 +25,7 @@ const Teste = ({ projects }) => {
           }
       ]
   return (
-    <div className="flex justify-center w-screen relative min-h-screen">
+    <div className="flex justify-center w-screen relative min-h-screen bg-stone-950">
       <div className="absolute inset-0 ">
         <FaultyTerminal
           scale={1.5}
