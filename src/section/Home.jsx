@@ -3,6 +3,7 @@ import Nav from "./Nav";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { BsGithub,BsEnvelope,BsDiscord,BsLinkedin,BsX, BsXCircle, BsTwitter, BsTwitterX } from 'react-icons/bs'
+import DecryptedText from "@/components/DecryptedText";
 const Teste = ({ projects }) => {
   const navigate = useNavigate();
   const Icons = [
@@ -52,7 +53,19 @@ const Teste = ({ projects }) => {
         </div>
         <div className="bg-stone-950 w-full p-7 flex  flex-col gap-5">
           <main className="flex text-stone-300 flex-col gap-5">
-            <h1 className="text-[#86efac] font-bold text-[30px]">About</h1>
+            <div>
+                            <DecryptedText
+                            text="About"
+                            speed={70}
+                            maxIterations={10}
+                            characters="01#$%&@!?<>/"
+                            revealDirection="start"
+                            parentClassName="all-letters font-bold text-[30px] text-[#86efac]"
+                            encryptedClassName="encrypted"
+                            className="font-bold text-[30px] text-[#86efac]"
+                            
+                          />
+                        </div>
 
             <div className="flex flex-col gap-4 leading-relaxed font-serif">
               <p>
@@ -90,7 +103,19 @@ const Teste = ({ projects }) => {
 
           <main className="flex text-stone-300 flex-col gap-5">
             <div className="flex justify-between items-center">
-              <h1 className="text-[#86efac] font-bold text-[30px]">Projects</h1>
+              <div>
+                            <DecryptedText
+                            text="Projects"
+                            speed={70}
+                            maxIterations={10}
+                            characters="01#$%&@!?<>/"
+                            revealDirection="start"
+                            parentClassName="all-letters font-bold text-[30px] text-[#86efac]"
+                            encryptedClassName="encrypted"
+                            className="font-bold text-[30px] text-[#86efac]"
+                            
+                          />
+                        </div>
               <button
                 onClick={() => navigate("/projects")}
                 className="flex items-center text-stone-500 hover:text-[#86efac] cursor-pointer gap-1"

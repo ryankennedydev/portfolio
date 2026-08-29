@@ -3,6 +3,7 @@ import avatar from '../assets/avatar.jpeg'
 import { BsGithub,BsEnvelope,BsDiscord,BsLinkedin,BsX, BsXCircle, BsTwitter, BsTwitterX } from 'react-icons/bs'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { ArrowRight  } from 'lucide-react'
+import DecryptedText from '@/components/DecryptedText'
 const Nav = () => {
     const location = useLocation()
     const navigate = useNavigate()
@@ -33,7 +34,17 @@ const Nav = () => {
       <main className='flex justify-between items-center w-full'>
         <div className='flex flex-col gap-1  '>
             <div>
-                <h1 className='text-[23px] font-bold text-[#86efac]'>Ryan Kennedy</h1>
+                <DecryptedText
+                text="Ryan Kennedy"
+                speed={70}
+                maxIterations={10}
+                characters="01#$%&@!?<>/"
+                revealDirection="start"
+                parentClassName="all-letters font-bold text-[23px] text-[#86efac]"
+                encryptedClassName="encrypted"
+                className="font-bold text-[23px] text-[#86efac]"
+                
+              />
             </div>
             <div className='flex gap-2'>
                 <h1 onClick={() => {
