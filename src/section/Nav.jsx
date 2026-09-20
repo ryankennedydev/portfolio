@@ -18,7 +18,7 @@ const Nav = () => {
             "icone": <BsDiscord />,"link": "https://github.com/ryankennedydev"
         },
         {
-            "icone": <BsLinkedin />,"link": "https://github.com/ryankennedydev"
+            "icone": <BsLinkedin />,"link": "https://www.linkedin.com/in/ryan-kennedy-4033733b2/"
         }
         ,
         {
