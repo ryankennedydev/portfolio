@@ -12,11 +12,13 @@ const App = () => {
     link: "https://github.com/ryankennedydev/wallet-ui",
   },
   {
-    name: "AboutDev",
+    name: "Saveall",
     description:
-      "A platform that helps developers discover tools and resources.",
+      "
+
+A full-stack web application for creating, organizing, and managing personalized value cards, built with React, Node.js, Express, and MongoDB. ",
     language: "JavaScript",
-    link: "https://github.com/ryankennedydev/aboutdev",
+    link: "https://github.com/ryankennedydev/save-all",
   },
   {
     name: "Library System",
