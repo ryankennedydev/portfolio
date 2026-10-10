@@ -14,19 +14,11 @@ const App = () => {
   {
     name: "Saveall",
     description:
-      "
-
-A full-stack web application for creating, organizing, and managing personalized value cards, built with React, Node.js, Express, and MongoDB. ",
-    language: "JavaScript",
+      "A full-stack web application for creating, organizing, and managing personalized value cards, built with React, Node.js, Express, and MongoDB. ",
+    language: "JavaScript, NodeJS, Mongoodb",
     link: "https://github.com/ryankennedydev/save-all",
   },
-  {
-    name: "Library System",
-    description:
-      "A terminal-based library management system for adding, borrowing, returning, and managing books.",
-    language: "Python",
-    link: "https://github.com/ryankennedydev/library-system-python",
-  },
+  
   {
     name: "Portfolio",
     description:
